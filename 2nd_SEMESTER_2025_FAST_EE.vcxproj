@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="Array Formation.cpp" />
     <ClCompile Include="Programming Question 1 .cpp" />
+    <ClCompile Include="Programming Question 2 .cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
