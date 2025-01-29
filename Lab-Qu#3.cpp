@@ -1,65 +1,39 @@
-//Exercise 3: (10 points)
-//Encryption can be very useful method for protecting sensitive data from intruders.Data is
-//converted into meaningless form by the usage of a given key and it is converted back to original
-//form by utilizing the key again when required.You need to design an encryption\decryption
-//application.
-//Example:
-//Inputs:
-//Text: hello world, Key : 3
-//Outputs :
-//	Encrypted text : khoor zruog, Decrypted text : hello world
-//	Note :
-//1. Use only character arrays.
-//2. String Library functions are not allowed.
-//3. Make separate functions for encryption and decryption and write down the main
-//function as well to make the code interactive.
-//Usage of temporary arrays is prohibited.Both encryption and decryption should be performed
-//on original array
-#include <iostream>	
-using namespace std;
-void Encryption(char text[], int key) {
-	for (int i = 0; text[i] != '\0'; i++) {
-		if (text[i] >= 'a' && text[i] <= 'z') {
-			text[i] = text[i] + key;
-			if (text[i] > 'z') {
-				text[i] = text[i] - 'z' + 'a' - 1;
-			}
-		}
-		else if (text[i] >= 'A' && text[i] <= 'Z') {
-			text[i] = text[i] + key;
-			if (text[i] > 'Z') {
-				text[i] = text[i] - 'Z' + 'A' - 1;
-			}
-		}
-	}
-	cout << "Encrypted text: " << text << endl;
-}
-void Decryption(char text[], int key) {
-	for (int i = 0; text[i] != '\0'; i++) {
-		if (text[i] >= 'a' && text[i] <= 'z') {
-			text[i] = text[i] - key;
-			if (text[i] < 'a') {
-				text[i] = text[i] + 'z' - 'a' + 1;
-			}
-		}
-		else if (text[i] >= 'A' && text[i] <= 'Z') {
-			text[i] = text[i] - key;
-			if (text[i] < 'A') {
-				text[i] = text[i] + 'Z' - 'A' + 1;
-			}
-		}
-	}
-	cout << "Decrypted text: " << text << endl;
-}
-
-int main() {
-	char text[100];
-	int key;
-	cout << "Enter the text: ";
-	cin.getline(text, 100);
-	cout << "Enter the key: ";
-	cin >> key;
-	Encryption(text, key);
-	Decryption(text, key);
-	return 0;
-}
+//#include <iostream>
+//using namespace std;
+//
+//void Encrypted(char parr[], int key) {
+//	for (int i = 0;i < 20;i++) {
+//		parr[i] += key;
+//	}
+//	for (int i = 0;i < 20;i++) {
+//		cout << parr[i];
+//	}
+//}
+//void decrypted (char parr[], int key) {
+//	for (int i = 0;i < 20;i++) {
+//		parr[i] -= key;
+//	}
+//	for (int i = 0;i < 20;i++) {
+//		cout << parr[i];
+//	}
+//}
+//int main() {
+//	int key;
+//	char array[20];
+//	cout << "please Enter the elements of array:";
+//	cin.getline(array,20);
+//	cout << endl;
+//	cout << "enter the key(1-10):";
+//	cin >> key;
+//	cout << endl;
+//	cout << "so the encrypted word is:";
+//	Encrypted(array, key);
+//	cout << endl << endl;
+//	cout << "enter th key to decrypted the word";
+//	int key1 = 0;
+//	cin >> key1;
+//	cout << "the decrypted word is:";
+//	decrypted(array, key);
+//
+//	return 0;
+//}
