@@ -138,6 +138,7 @@
     <ClCompile Include="Programming Question 1 .cpp" />
     <ClCompile Include="Programming Question 2 .cpp" />
     <ClCompile Include="Programming Question 3 .cpp" />
+    <ClCompile Include="Searching in array.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
