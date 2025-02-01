@@ -31,7 +31,6 @@ void binary_search(int arr[], int size, int search) {
 	}
 
 }
-int main() {
 
 
 	return 0;
