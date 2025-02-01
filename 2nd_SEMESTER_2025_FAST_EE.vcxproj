@@ -130,6 +130,7 @@
     <ClCompile Include=".....cpp" />
     <ClCompile Include="4.cpp" />
     <ClCompile Include="Array Formation.cpp" />
+    <ClCompile Include="binary_search_in_an_array.cpp" />
     <ClCompile Include="c-string.cpp" />
     <ClCompile Include="Equillibirium Index.cpp" />
     <ClCompile Include="Lab-Manual_Qu#2.cpp" />
