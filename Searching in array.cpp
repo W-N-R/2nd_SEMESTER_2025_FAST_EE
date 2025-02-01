@@ -15,6 +15,7 @@ int main() {
 	for (int i = 0;i < 10;i++) {
 		cin >> array[i];
 	}
+
 	int search;
 	cout << "Enter the number you want to search:";
 	cin >> search;
