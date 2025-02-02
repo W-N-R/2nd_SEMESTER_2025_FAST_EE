@@ -49,27 +49,28 @@ int main() {
 	//str2 = *s1;
 	//cout << str1 << " " << str2 << endl;
 
-	cout << endl;
-	double dec1 = 2.5;
-	double dec2 = 3.8;
-	double* p, * q;
-	p = &dec1;
-	*p = dec2 - dec1;
-	q = p;
-	*q = 10.0;
-	*p = 2 * dec1 + (*q);
-	q = &dec2;
-	dec1 = *p + *q;
-	cout << dec1 << " " << dec2 << endl;
-	cout << *p << " " << *q << endl;
 
-	int* speed = new int; //Line 1
-	double* travelTime; //Line 2
-	double* distance; //Line 3
-	speed = 65; //Line 4
-	*travelTime = 8.5; //Line 5
-	distance = new double; //Line 6
-	distance = (*speed) * (*travelTime); //Line 7
-	cout << *distance << endl;
+		int* speed = new int;    // Line 1
+		double* travelTime;      // Line 2
+		double* distance;        // Line 3
+
+		speed = new int;         // Allocate memory
+		travelTime = new double; // Allocate memory
+		distance = new double;   // Allocate memory
+
+		*speed = 65;             // Line 4 (Fixed)
+		*travelTime = 8.5;       // Line 5
+
+		*distance = (*speed) * (*travelTime); // Line 7
+
+		cout << *distance << endl; // Line 8
+
+		// Free allocated memory
+		delete speed;
+		delete travelTime;
+		delete distance;
+
+	
+
 	return 0;
 }
