@@ -54,5 +54,8 @@
     <ClCompile Include="binary_search_in_an_array.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="pointers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
