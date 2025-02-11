@@ -21,26 +21,6 @@ using namespace std;
 //	return 0;
 //}
 
-void MyIncrementFirst(int* i) {
-	(*i)++;
-}
-
-void MyIncrementSecond(int i)
-{
-	i++;
-}
-
-void MyIncrementThird(int& i) {
-	i++;
-}
-
-void MyIncrementFourth(int** i) {
-	*i = new int(0);
-}
-
-void MyIncrementFifth(int*& i) {
-	i = new int(69);
-}
 
 int main() {
 	int a = 5;
@@ -112,12 +92,28 @@ int main() {
 
 
 	
-		int* a = new int(42);
-		cout << "Result" << endl;
-		MyIncrementFirst(&a);
-		cout << "first " << a << endl;
-		MyIncrementSecond(a);
+		int** _2DArray;
+		int rows;
 
+		cin >> rows;
+		_2DArray = new int* [rows];
+		for (int i = 0; i < rows; i++)
+			_2DArray[i] = new int[i + 1];
+
+		for (int i = 0; i < rows; i++)
+			for (int k = 0; k < i + 1; k++)
+				_2DArray[i][k] = i + k;
+
+		for (int i = 0; i < rows; i++)
+		{
+			for (int k = 0; k < i + 1; k++)
+				cout << _2DArray[i][k] << " ";
+			cout << endl;
+		}
+		for (int i = 0; i < rows; i++)
+			delete[] _2DArray[i];
+		delete[] _2DArray;
+		
 
 
 		return 0;
