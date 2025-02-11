@@ -21,7 +21,26 @@ using namespace std;
 //	return 0;
 //}
 
+void MyIncrementFirst(int* i) {
+	(*i)++;
+}
 
+void MyIncrementSecond(int i)
+{
+	i++;
+}
+
+void MyIncrementThird(int& i) {
+	i++;
+}
+
+void MyIncrementFourth(int** i) {
+	*i = new int(0);
+}
+
+void MyIncrementFifth(int*& i) {
+	i = new int(69);
+}
 
 int main() {
 	int a = 5;
@@ -92,6 +111,16 @@ int main() {
 	delete[] yourListPtr;  // Move delete to the end to avoid dangling pointer
 
 
-	return 0;
+	
+		int* a = new int(42);
+		cout << "Result" << endl;
+		MyIncrementFirst(&a);
+		cout << "first " << a << endl;
+		MyIncrementSecond(a);
+
+
+
+		return 0;
+	
 
 }
