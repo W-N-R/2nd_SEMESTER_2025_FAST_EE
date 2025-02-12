@@ -1,6 +1,27 @@
 #include <iostream>
 using namespace std;
 
+// Function to resize the array
+void resize(int*& arr, int size, int new_size) {
+	// Allocate new memory for the resized array
+	int* newArr = new int[new_size];
+
+	// Copy old elements into the new array up to the minimum size
+	for (int i = 0; i < min(size, new_size); i++) {
+		newArr[i] = arr[i];
+	}
+
+	// If new size is greater, fill extra spaces with 0
+	for (int i = size; i < new_size; i++) {
+		newArr[i] = 0;
+	}
+
+	// Delete old array to prevent memory leak
+	delete[] arr;
+
+	// Update pointer to point to the new resized array
+	arr = newArr;
+}
 int main() {
 	//int num1 = 10,num2=9;
 	//int* p;
@@ -145,6 +166,35 @@ int main() {
 		delete[] _2DArray[i];
 	delete[] _2DArray;
 	_2DArray = nullptr;	
+
+
+
+
+
+	
+		int size = 5;
+		int* arr = new int[size] {2, 32, 4, 34, 51};
+
+		cout << "Before resizing: ";
+		for (int i = 0; i < size; i++) {
+			cout << arr[i] << " ";
+		}
+		cout << endl;
+
+		// Resize the array (Example: Increasing size to 7)
+		int new_size = 7;
+		resize(arr, size, new_size);
+
+		cout << "After resizing: ";
+		for (int i = 0; i < new_size; i++) {
+			cout << arr[i] << " ";
+		}
+		cout << endl;
+
+		// Cleanup memory
+		delete[] arr;
+
+		
 
 
 	return 0;
