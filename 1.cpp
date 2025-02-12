@@ -128,7 +128,18 @@ int main() {
 		}
 		cout << endl << "Sum = " << sum << endl;
 
-		return 0;
+
+
+
+			int* ptr = new int(20); // Allocating and initializing
+
+			cout << "Value: " << *ptr << endl; // Output: 20
+
+			delete ptr; // Free allocated memory
+			ptr = nullptr; // Avoid dangling pointer
+
+			return 0;
+	
 	
 
 }
