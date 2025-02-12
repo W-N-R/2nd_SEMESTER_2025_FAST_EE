@@ -131,8 +131,10 @@
     <ClCompile Include="1.cpp" />
     <ClCompile Include="4.cpp" />
     <ClCompile Include="Array Formation.cpp" />
+    <ClCompile Include="Assignment 1 Question no.4.cpp" />
     <ClCompile Include="binary_search_in_an_array.cpp" />
     <ClCompile Include="c-string.cpp" />
+    <ClCompile Include="class_work.cpp" />
     <ClCompile Include="Equillibirium Index.cpp" />
     <ClCompile Include="Lab-Manual_Qu#2.cpp" />
     <ClCompile Include="Lab-Qu#3.cpp" />
@@ -142,6 +144,9 @@
     <ClCompile Include="Programming Question 2 .cpp" />
     <ClCompile Include="Programming Question 3 .cpp" />
     <ClCompile Include="Searching in array.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="yourRollnumber.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
