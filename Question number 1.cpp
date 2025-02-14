@@ -12,7 +12,6 @@ int main()
 	cin >> size;
 	int* ptr = new int(size);
 	
-	srand(static_cast<unsigned int>(time(nullptr)));
 	for (int i = 0; i < size;i++) {
 		 ptr[i] = rand();
 	}
