@@ -21,6 +21,7 @@ int main()
 
 		int random_num = rand() % 201 - 100;
 
+
 		do {
 
 			ptr[i] = random_num;
