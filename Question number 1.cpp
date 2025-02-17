@@ -30,6 +30,7 @@ int main()
 {
 	
 	int size;
+	cout << "Please enter the number of elements in the main array or size of array: ";
 	cin >> size;
 	int* ptr = new int [size];
 
@@ -46,16 +47,20 @@ int main()
 
 		} while (*ptr == 0);
 	}
-
+	cout << endl;
+	cout << "so these are the random numbers" << endl;
 	for (int i = 0; i < size;i++) {
 
 		cout << ptr[i]<<endl;
 
 	}
-	cout << "Sorted Array" << endl;
+
+
+	cout << endl;
+	cout << "Sorted Array of positive numbers: " << endl;
 	Display_positive(ptr, size);
+	cout  << endl;
 	cout << "Negative numbers" << endl;
-	
 	Display_Negative(ptr, size);
 	delete[] ptr;
 	return 0;
