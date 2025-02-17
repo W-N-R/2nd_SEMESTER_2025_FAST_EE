@@ -4,8 +4,8 @@
 
 using namespace std;
 
-void Display_positive(int* x, int size) {
-	int count = 0;
+void Display_positive(int* x, int size, int count) {
+	
 	for (int i = 0; i < size; i++) {
 		if (x[i] > 0) {
 			count++;
@@ -15,8 +15,8 @@ void Display_positive(int* x, int size) {
 	cout << "The number of positive numbers in the array is: " << count << endl;
 }
 
-void Display_Negative(int* x, int size) {
-	int count = 0;
+void Display_Negative(int* x, int size, int count) {
+	
 	for (int i = 0; i < size; i++) {
 		if (x[i] < 0) {
 			count++;
@@ -58,10 +58,14 @@ int main()
 
 	cout << endl;
 	cout << "Sorted Array of positive numbers: " << endl;
-	Display_positive(ptr, size);
+	int countpos = 0;
+	Display_positive(ptr, size, countpos);
 	cout  << endl;
 	cout << "Negative numbers" << endl;
-	Display_Negative(ptr, size);
+	int countneg = 0;
+	Display_Negative(ptr, size	,countneg );
+
+	int * array_positives = [countpos];
 	delete[] ptr;
 	return 0;
 
