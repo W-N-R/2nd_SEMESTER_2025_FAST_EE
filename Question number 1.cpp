@@ -35,6 +35,7 @@ int main() {
  
  		} while (*main_array == 0);
  	}
+
  	cout << endl;
  	cout << "So these are the random numbers" << endl;
  	for (int i = 0; i < size;i++) {
