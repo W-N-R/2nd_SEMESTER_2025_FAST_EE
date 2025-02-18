@@ -19,7 +19,6 @@
 //    cout << "Enter the size of the array: ";
 //    cin >> size;
 //
-//  
 //    int* main_array = new int[size];
 //
 //    	srand(time(0));
