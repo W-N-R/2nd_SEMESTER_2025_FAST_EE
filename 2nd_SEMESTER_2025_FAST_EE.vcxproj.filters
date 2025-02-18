@@ -66,7 +66,7 @@
     <ClCompile Include="class_work.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Question number 1.cpp">
+    <ClCompile Include="Assignment_Question number 1.cpp">
       <Filter>Source Files\Assignment_1_PF_FAST</Filter>
     </ClCompile>
     <ClCompile Include="Question number 4.cpp">
