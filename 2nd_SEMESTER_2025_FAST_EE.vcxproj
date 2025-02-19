@@ -133,6 +133,7 @@
     <ClCompile Include="Array Formation.cpp" />
     <ClCompile Include="Assignment_Question number 4.cpp" />
     <ClCompile Include="Assignment_Question_number_2.cpp" />
+    <ClCompile Include="Assignment_Question_number_3.cpp" />
     <ClCompile Include="binary_search_in_an_array.cpp" />
     <ClCompile Include="c-string.cpp" />
     <ClCompile Include="class_work.cpp" />
