@@ -72,6 +72,9 @@
     <ClCompile Include="Assignment_Question number 4.cpp">
       <Filter>Source Files\Assignment_1_PF_FAST</Filter>
     </ClCompile>
+    <ClCompile Include="Assignment_Question_number_2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="yourRollnumber.txt" />
