@@ -1,0 +1,6 @@
+﻿  Assignment_Question_number_2.cpp
+C:\Users\WNR\Visual Studio\2nd_Semester_Assignment_01\Assignment_Question_number_2.cpp(8,24): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\WNR\Visual Studio\2nd_Semester_Assignment_01\Assignment_Question_number_2.cpp(9,20): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Assignment_Question_number_3.cpp
+  Generating Code...
+  2nd_Semester_Assignment_01.vcxproj -> C:\Users\WNR\Visual Studio\2nd_Semester_Assignment_01\x64\Debug\2nd_Semester_Assignment_01.exe
