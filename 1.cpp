@@ -167,6 +167,13 @@ int main() {
 			cin >> array[i][j];
 		}
 	}
+	cout << "here is the array : ";
+	for (int i = 0; i < rows; i++) {
+		for (int j = 0;j < columns; j++) {
+			cout << array[i][j] << endl;
+		}
+	}
+
 
 	return 0;
 }
