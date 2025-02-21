@@ -144,36 +144,46 @@
 //
 //}
 
-
+	
 #include <iostream>
+
 using namespace std;
 
 int main() {
+    int rows, cols;
 
+    // Taking input for rows and columns
+    cout << "Enter number of rows: ";
+    cin >> rows;
+    cout << "Enter number of columns: ";
+    cin >> cols;
 
-	int  rows, columns;
-	cout << "Enter the number of rows: ";
-	cin >> rows;
-	cout << "Enter the numbers of coulmns: ";
-	cin >> columns;
+    // Dynamically allocating a 2D array
+    int** array = new int* [rows];
+    for (int i = 0; i < rows; i++) {
+        array[i] = new int [cols];
+    }
 
-	int** array = new int* [rows];
-	for (int i = 0; i < rows; i++) {
-		int** array1 = new int* [columns];
-	}
+    // Taking input for the 2D array
+    cout << "Enter elements of the array:\n";
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            cin >> array[i][j];
+        }
+    }
 
-	for (int i = 0; i < rows; i++) {
-		for (int j = 0;j < columns; j++) {
-			cin >> array[i][j];
-		}
-	}
-	cout << "here is the array : ";
-	for (int i = 0; i < rows; i++) {
-		for (int j = 0;j < columns; j++) {
-			cout << array[i][j] << endl;
-		}
-	}
+    // Printing the 2D array
+    cout << "The entered 2D array is:\n";
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            cout << array[i][j] << " ";
+        }
+        cout << endl;
+    }
 
-
-	return 0;
+    // Deallocating memory
+    for (int i = 0; i < rows; i++) {
+        delete[] array;
+    }
+        return 0;
 }
