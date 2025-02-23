@@ -208,13 +208,13 @@ int main() {
 	cout << endl << "Enter the Elements of Matrix";
 	for (int i = 0; i < columns;i++) {
 		for (int j = 0; j < rows;j++) {
-			cin >> array[i][j];
+			cin >> array[j][i];
 		}
 	}
 	cout << endl << "So the number of Elements in the matrix is : ";
 	for (int i = 0; i < columns;i++) {
 		for (int j = 0; j < rows;j++) {
-			cout << array[i][j]<<" ";
+			cout << array[j][i];
 		}
 	}
 	for (int i = 0; i < rows;i++) {
