@@ -152,19 +152,16 @@ using namespace std;
 int main() {
     int rows, cols;
 
-    // Taking input for rows and columns
     cout << "Enter number of rows: ";
     cin >> rows;
     cout << "Enter number of columns: ";
     cin >> cols;
 
-    // Dynamically allocating a 2D array
     int** array = new int* [rows];
     for (int i = 0; i < rows; i++) {
         array[i] = new int [cols];
     }
 
-    // Taking input for the 2D array
     cout << "Enter elements of the array:\n";
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
@@ -172,7 +169,6 @@ int main() {
         }
     }
 
-    // Printing the 2D array
     cout << "The entered 2D array is:\n";
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
@@ -181,7 +177,6 @@ int main() {
         cout << endl;
     }
 
-    // Deallocating memory
     for (int i = 0; i < rows; i++) {
         delete[] array;
     }
