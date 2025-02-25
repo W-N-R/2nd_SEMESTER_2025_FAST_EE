@@ -187,39 +187,23 @@
 //}
 
 
+#include <iostream >
 
-
-#include <iostream>
 using namespace std;
+
+int* declare_1d_array(int size_rows, int coulmns) {
+	int* 
+
+	
+}
+
 
 int main() {
 
-	int columns, rows;
-	cout << "Enter number of coulmnns : ";
-	cin >> columns;
-	cout << endl << "Enter number of rows : ";
-	cin >> rows;
 
-	int** array = new int* [columns];
-	for (int i = 0; i < columns; i++) {
-		 array[i] = new int[rows];
-	}
 
-	cout << endl << "Enter the Elements of Matrix";
-	for (int i = 0; i < columns;i++) {
-		for (int j = 0; j < rows;j++) {
-			cin >> array[i][j];
-		}
-	}
-	cout << endl << "So the number of Elements in the matrix is : ";
-	for (int i = 0; i < columns;i++) {
-		for (int j = 0; j < rows;j++) {
-			cout << array[i][j]<<" ";
-		}
-	}
-	for (int i = 0; i < rows;i++) {
-		delete[] array;
-	}
+
 	return 0;
 
 }
+
