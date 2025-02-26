@@ -55,3 +55,83 @@
 //	delete[] Student_multiple;
 //	return 0;
 //}
+
+
+
+
+//------------------------------------------------------------------------
+
+
+
+//#include <iostream>
+//using namespace std;
+//
+//struct Employee {
+//	string name;
+//	int age;
+//	string skills[4];
+//
+//};
+//
+//void display(const Employee& data) {
+//	cout << "Name of the Employee is :";
+//	cout << data.name << "\n";
+//	cout << "Age of the Employee is : ";
+//	cout << data.age << endl;
+//	cout << "skills the person have is : ";
+//	for (int i = 0; i < 4;i++) {
+//		cout << data.skills[i] << " ";
+//	}
+//
+//}
+//
+//int main() {
+//	Employee emp;
+//	emp.name = "WNR";
+//	emp.age = 20;
+//	emp.skills[0] = "c++";
+//	emp.skills[1] = "Java";
+//	emp.skills[2] = "Python";
+//	emp.skills[3] = "SQL";
+//
+//	cout << endl;
+//	display(emp);
+//
+//	Employee* ptr_for_skills_update = &emp;
+//	ptr_for_skills_update->skills[0] = "Java Script";
+//	ptr_for_skills_update->skills[1] = "Ns2";
+//	ptr_for_skills_update->skills[2] = "CSS";
+//	ptr_for_skills_update->skills[3] = "Matlab";
+//	
+//	for (int i = 0;i < 4;i++) {
+//		cout << endl;
+//		cout << emp.skills[i];
+//	}
+//	return 0;
+//
+//}
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int numList[6] = { 25, 37, 62, 78, 92, 13 };
+	int* listPtr = numList;
+	int* temp = listPtr + 2;
+	int num;
+	*listPtr = *(listPtr + 1) - *listPtr;
+	listPtr++;
+	num = *temp;
+	temp++;
+	listPtr++;
+	*listPtr = *temp;
+	*temp = num;
+	listPtr = listPtr + 2;
+	*listPtr = *(listPtr - 1);
+	for (int i = 0;i < 6;i++) {
+		cout << numList[i]<<" ";
+	}
+
+	return 0;
+}
