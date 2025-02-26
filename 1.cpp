@@ -187,23 +187,55 @@
 //}
 
 
-#include <iostream >
 
+#include <iostream>
+#include <string>
 using namespace std;
 
-int* declare_1d_array(int size_rows, int coulmns) {
-	int* 
+struct Student {
+    string name;
+    int rollNumber;
+};
 
-	
+void displayStudent(const Student& student) {
+    cout << "Name: " << student.name << endl;
+    cout << "Roll Number: " << student.rollNumber << endl;
 }
-
 
 int main() {
+    Student student1;
+    student1.name = "Waleed";
+    student1.rollNumber = 6023; 
 
+    Student* ptr = &student1;
+    cout << "Through pointer output is :" << endl;
+    cout << "Name: " << ptr->name << endl;
+    cout << "Roll Number: " << ptr->rollNumber << endl << endl;
 
+    cout << "Displaying Student 1 using function:" << endl;
+    displayStudent(student1);
+    cout << endl;
 
+    int numStudents;
+    cout << "Enter number of students: ";
+    cin >> numStudents;
 
-	return 0;
+    Student* students = new Student[numStudents];
 
+    for (int i = 0; i < numStudents; i++) {
+        cout << "Enter name of student " << i + 1 << ": ";
+        cin >> students[i].name;
+        cout << "Enter roll number of student " << i + 1 << ": ";
+        cin >> students[i].rollNumber;
+    }
+
+    cout << "\nDisplaying all student details:\n";
+    for (int i = 0; i < numStudents; i++) {
+        displayStudent(students[i]);
+        cout << endl;
+    }
+
+    delete[] students;
+
+    system("pause");
 }
-
