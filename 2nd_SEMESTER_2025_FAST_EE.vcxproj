@@ -147,6 +147,7 @@
     <ClCompile Include="Programming Question 3 .cpp" />
     <ClCompile Include="Assignment_Question number 1.cpp" />
     <ClCompile Include="Searching in array.cpp" />
+    <ClCompile Include="Struct_!!!.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="yourRollnumber.txt" />
