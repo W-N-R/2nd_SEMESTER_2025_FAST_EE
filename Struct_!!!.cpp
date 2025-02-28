@@ -112,26 +112,110 @@
 //}
 
 
-#include <iostream>
-using namespace std;
+//#include <iostream>
+//using namespace std;
+//
+//int main() {
+//	int numList[6] = { 25, 37, 62, 78, 92, 13 };
+//	int* listPtr = numList;
+//	int* temp = listPtr + 2;
+//	int num;
+//	*listPtr = *(listPtr + 1) - *listPtr;
+//	listPtr++;
+//	num = *temp;
+//	temp++;
+//	listPtr++;
+//	*listPtr = *temp;
+//	*temp = num;
+//	listPtr = listPtr + 2;
+//	*listPtr = *(listPtr - 1);
+//	for (int i = 0;i < 6;i++) {
+//		cout << numList[i]<<" ";
+//	}
+//
+//	return 0;
+//}
 
-int main() {
-	int numList[6] = { 25, 37, 62, 78, 92, 13 };
-	int* listPtr = numList;
-	int* temp = listPtr + 2;
-	int num;
-	*listPtr = *(listPtr + 1) - *listPtr;
-	listPtr++;
-	num = *temp;
-	temp++;
-	listPtr++;
-	*listPtr = *temp;
-	*temp = num;
-	listPtr = listPtr + 2;
-	*listPtr = *(listPtr - 1);
-	for (int i = 0;i < 6;i++) {
-		cout << numList[i]<<" ";
-	}
 
-	return 0;
-}
+//#include <iostream>
+//using namespace std;
+//
+//int main() {
+//
+//	int* intList;
+//	intList = new int[5];
+//	for (int i = 0; i < 5; i++)
+//		cin >> intList[i];
+//	for (int i = 4; i > 0; i--)
+//		intList[i] = intList[i] + intList[i - 1];
+//	int sum = 0;
+//	for (int i = 0; i < 5; i++)
+//	{
+//		cout << intList[i] << " ";
+//		sum = sum + intList[i];
+//	}
+//	cout << endl << "Sum = " << sum << endl;
+//
+//	return 0;
+//}
+
+
+
+//
+//#include <iostream>
+//#include <cstring>
+//using namespace std;
+//int iz;
+//void countCharacter(char parr[], char look) {
+//	int num = 0;
+//	for (int i = 0; i < 50;i++) {
+//		if (parr[i] == look) {
+//			num++;
+//			cout << endl;
+//			in = 0;
+//		}
+//		
+//		else {
+//			 iz = 0;
+//		}
+//	}
+//	cout << endl;
+//	if(in==0){
+//	}
+//	cout << endl;
+//	if (iz == 0) {
+//		cout << "no match";
+//	}
+//}
+//int main() {
+//	char look;
+//	char array[50];
+//	cout << "please enter the characters not ore then 50 : ";
+//
+//	cin.getline(array, 50);
+//	cout << "please enter the char to find : ";
+//	cin >> look;
+//	countCharacter(array, look);
+//	return 0;
+//}
+
+//#include <iostream>
+//using namespace std;
+//
+//struct Student {
+//	int rollnumber;
+//	string name;
+//	string* courses;
+//};
+//
+//int main() {
+//	Student* s = new Student;
+//	s->rollnumber = 1;
+//	s->name = "Ahmed";
+//	s->courses=new string[2];
+//	s->courses[0] = "CS1002";
+//	s->courses[1] = "CS1002";
+//	delete[] s->courses;
+//	delete  s;
+//	return 0;
+//}
