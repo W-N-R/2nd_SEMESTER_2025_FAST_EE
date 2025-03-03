@@ -219,3 +219,27 @@
 //	delete  s;
 //	return 0;
 //}
+
+
+
+#include <iostream>
+using namespace std;
+
+class student {
+
+private:
+	int roll_number;
+	string name;
+	float cgpa;
+
+public:
+	void set_rollnum(int);
+	int get_rollnum();
+
+};
+int main() {
+	student a;
+	a.set_rollnum(1);
+	cout << a.get_rollnum();
+	return 0;
+}

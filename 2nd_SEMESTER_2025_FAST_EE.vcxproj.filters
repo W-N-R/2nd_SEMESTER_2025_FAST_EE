@@ -85,4 +85,9 @@
   <ItemGroup>
     <Text Include="yourRollnumber.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Student.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>
