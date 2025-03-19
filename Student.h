@@ -10,7 +10,7 @@ private:
 	float cgpa;
 
 public:
-	void set_rollnum(int);
-	int get_rollnum();
+	void set_rollnum();
+	int get_rollnum(int);
 
 };
