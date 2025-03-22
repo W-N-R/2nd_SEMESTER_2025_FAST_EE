@@ -4,50 +4,37 @@
 #include <string>
 using namespace std;
 
-class student {
+class a {
 protected:
-    int roll_number;
-    string name;
-    float cgpa;
-
+	string arr[100];
 public:
-    s
-    student(int, string, float); // Constructor
-    void setroll_num(int);       // Setter
-    int getroll_num();           // Getter
+	a();
+	a(string);
 };
 
-// Constructor Definition
-student::student(int r, string n, float c) {
-    roll_number = r;
-    name = n;
-    cgpa = c;
+a::a(string data) 
+{
+
+	for (int i = 0; i < 100; i++) {
+		arr[i] = data;
+	}
 }
 
-// Setter Function Definition
-void student::setroll_num(int r) {
-    roll_number = r; // Fixed variable name
-}
-
-// Getter Function Definition
-int student::getroll_num() {
-    return roll_number;
-}
-
-// Derived Class
-class good_students : public student {
+class b : public a {
 public:
-    using student::student; // Inherit constructor
-    void display() {
-        cout << roll_number;
-    }
+	string* ptr=arr;
+	void display();
+	b();
+
 };
 
+b::b() :a() {
+
+}
+
+void b::display() {
+	for (int i = 0; i < 100; i++) {
+		cout << ptr[i] << endl;
+	}
+}
 #endif
-
-int main() {
-
-    student fast;
-
-    return 0;
-}
