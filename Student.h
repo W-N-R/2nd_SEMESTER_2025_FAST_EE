@@ -34,7 +34,7 @@ b::b() :a() {
 
 void b::display() {
 	for (int i = 0; i < 100; i++) {
-		cout << ptr[i] << endl;
+		cout << arr[i] << endl;
 	}
 }
 #endif
