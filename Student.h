@@ -12,9 +12,16 @@ public:
 	a(string);
 };
 
+a::a() {
+	for (int i = 0; i < 100; i++) {
+		cin >> arr[i];
+	}
+}
+
+
 a::a(string data) 
 {
-
+	
 	for (int i = 0; i < 100; i++) {
 		arr[i] = data;
 	}
