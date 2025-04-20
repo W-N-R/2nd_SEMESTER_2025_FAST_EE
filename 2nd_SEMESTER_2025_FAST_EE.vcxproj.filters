@@ -81,6 +81,15 @@
     <ClCompile Include="Struct_!!!.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="polymorphism.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Mid-2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="yourRollnumber.txt" />

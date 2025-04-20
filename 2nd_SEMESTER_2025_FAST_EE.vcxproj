@@ -140,8 +140,11 @@
     <ClCompile Include="Equillibirium Index.cpp" />
     <ClCompile Include="Lab-Manual_Qu#2.cpp" />
     <ClCompile Include="Lab-Qu#3.cpp" />
+    <ClCompile Include="Lab11.cpp" />
     <ClCompile Include="Lab_manual_Q#1.cpp" />
+    <ClCompile Include="Mid-2.cpp" />
     <ClCompile Include="pointers.cpp" />
+    <ClCompile Include="polymorphism.cpp" />
     <ClCompile Include="Programming Question 1 .cpp" />
     <ClCompile Include="Programming Question 2 .cpp" />
     <ClCompile Include="Programming Question 3 .cpp" />
