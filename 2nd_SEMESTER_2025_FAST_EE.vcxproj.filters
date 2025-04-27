@@ -90,6 +90,9 @@
     <ClCompile Include="Lab11.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="vol.cpp">
+      <Filter>Source Files\Assignment_1_PF_FAST</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="yourRollnumber.txt" />

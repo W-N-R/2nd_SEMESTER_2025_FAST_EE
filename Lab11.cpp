@@ -196,21 +196,21 @@
 //    return 0;
 //}
 
-
-#include <iostream>
-
-using namespace std;
-template <class t1, class t2>
-class list {
-	t1 num;
-	t2 num2;
-public:
-	list() {}
-	template <class t, class t2>
-	list(t1 nom, t2 num): num (nom), num2(num){}
-	list print();
-};
-template <class t1, class t2>
-list <t1, t2>:: list (){
-
-}
+//
+//#include <iostream>
+//
+//using namespace std;
+//template <class t1, class t2>
+//class list {
+//	t1 num;
+//	t2 num2;
+//public:
+//	list() {}
+//	template <class t, class t2>
+//	list(t1 nom, t2 num): num (nom), num2(num){}
+//	list print();
+//};
+//template <class t1, class t2>
+//list <t1, t2>:: list (){
+//
+//}
