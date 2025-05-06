@@ -32,3 +32,34 @@
 //
 //	return 0;
 //}
+
+
+
+//
+//# include <iostream >
+//using namespace std;
+//
+//class number {
+//	int n;
+//public :
+//	int getdata(int r ){
+//		n = r;
+//		return n;
+//	}
+//	void printdata() {
+//		cout << n << endl;
+//	}
+//	void operator=(number b) {
+//		n = b.n;
+//		cout << "Assignment operator called" << endl;
+//	}
+//};
+//int main() {
+//	number a,b;
+//	b.getdata(4);
+//	a.printdata();
+//	a = b;
+//	cout << "a=";
+//	a.printdata();
+//	return 0;
+//}

@@ -93,6 +93,9 @@
     <ClCompile Include="vol.cpp">
       <Filter>Source Files\Assignment_1_PF_FAST</Filter>
     </ClCompile>
+    <ClCompile Include="lab final prep.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="yourRollnumber.txt" />

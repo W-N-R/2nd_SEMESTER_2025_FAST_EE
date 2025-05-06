@@ -138,6 +138,7 @@
     <ClCompile Include="c-string.cpp" />
     <ClCompile Include="class_work.cpp" />
     <ClCompile Include="Equillibirium Index.cpp" />
+    <ClCompile Include="lab final prep.cpp" />
     <ClCompile Include="Lab-Manual_Qu#2.cpp" />
     <ClCompile Include="Lab-Qu#3.cpp" />
     <ClCompile Include="Lab11.cpp" />
