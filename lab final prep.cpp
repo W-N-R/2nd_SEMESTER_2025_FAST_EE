@@ -9,7 +9,7 @@
 //	return 0;
 //}
 
-
+//
 //#include <iostream>
 //using namespace std;
 //int main()
@@ -26,8 +26,8 @@
 //using namespace std;
 //int main()
 //{
-//	int x = 4, * xx = &x, ** xxx = &xx;
-//	cout << sizeof(x) << "," << sizeof(xx) << "," << sizeof(xxx);
+//	int a = 4, * aa = &a, ** aaa = &aa;
+//	cout << sizeof(a) << "," << sizeof(aa) << "," << sizeof(aaa);
 //	return 0;
 //}
 
@@ -67,3 +67,45 @@
 //}
 
 
+
+//
+//#include <iostream>
+//using namespace std;
+//
+//class ComplexNumber {
+//public:
+//    ComplexNumber() {}
+//    ComplexNumber(float rl, float img); 
+//    ComplexNumber& operator-(ComplexNumber&);
+//    friend istream& operator>>(istream& in, ComplexNumber& n);
+//
+//private:
+//    float real, imaginary;
+//};
+//istream& operator>>(istream& in, ComplexNumber& n) {
+//    in >> n.real;
+//    in >> n.imaginary;
+//    return in;
+//}
+//ComplexNumber::ComplexNumber(float r1, float img) {
+//    real = r1;
+//    imaginary = img;
+//}
+//
+//ComplexNumber& ComplexNumber::operator-(ComplexNumber& pn)
+//{
+//    ComplexNumber an;
+//    an.real = real - pn.real;
+//    an.imaginary = imaginary - pn.imaginary;
+//    return an;
+//}
+
+//
+//template <class datatype>
+//class Number {
+//private :
+//	datatype n;
+//public:
+//	datatype display();
+//
+//};
