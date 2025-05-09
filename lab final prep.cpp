@@ -109,3 +109,59 @@
 //	datatype display();
 //
 //};
+
+//#include<iostream>
+//using namespace std;
+//
+//int main() {
+//    int nums[] = { 2, 4, 6, 8, 10 };
+//    int* p = nums;
+//
+//    cout << *(p + 1) << endl; // Line 1
+//    cout << *p << endl; // Line 2
+//    p += 3;
+//
+//    cout << *p << endl;    // Line 3
+//    cout << *(p - 2) << endl;   // Line 4
+//    p--;
+//    cout << *p << endl;    // Line 5
+//    return 0;
+//}
+
+
+//#include<iostream>
+//using namespace std;
+//
+//class Animal {
+//public:
+//    Animal() { cout << "Animal constructed\n"; }
+//    ~Animal() { cout << "Animal destroyed\n"; }
+//    virtual void speak() { cout << "Animal sound\n"; }
+//    void move() { cout << "Animal moving\n"; }
+//};
+//
+//class Dog : public Animal {
+//public:
+//    Dog() { cout << "Dog constructed\n"; }
+//    ~Dog() { cout << "Dog destroyed\n"; }
+//    void speak() override { cout << "woof woof!\n"; }
+//    void move() { cout << "Dog running\n"; }
+//};
+//
+//void makeSound(Animal a) {
+//    a.speak();
+//}
+//
+//int main() {
+//    Animal* animalPtr = new Dog();
+//
+//    cout << "\nUsing pointer:\n";
+//    animalPtr->speak();
+//    animalPtr->move();
+//    cout << "\nPassing by value:\n";
+//    Dog myDog;
+//    makeSound(myDog);
+//
+//    delete animalPtr;
+//    return 0;
+//}
