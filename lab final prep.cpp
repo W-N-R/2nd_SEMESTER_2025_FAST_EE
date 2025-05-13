@@ -165,3 +165,64 @@
 //    delete animalPtr;
 //    return 0;
 //}
+
+
+#include <iostream>
+using namespace std;
+
+// Base class
+class Shape {
+public:
+    virtual void CalculateArea() {
+        cout << "Shape: No specific area." << endl;
+    }
+};
+
+// Derived class - Rectangle
+class Rectangle : public Shape {
+private:
+    double length, width;
+
+public:
+    Rectangle(double l, double w) {
+        length = l;
+        width = w;
+    }
+
+    void CalculateArea() override {
+        double area = length * width;
+        cout << "Area of Rectangle: " << area << endl;
+    }
+};
+
+// Derived class - Circle
+class Circle : public Shape {
+private:
+    double radius;
+
+public:
+    Circle(double r) {
+        radius = r;
+    }
+
+    void CalculateArea() override {
+        double area = 3.14 * radius * radius;
+        cout << "Area of Circle: " << area << endl;
+    }
+};
+
+int main() {
+    // Create objects of derived classes
+    Rectangle rect(4, 5);
+    Circle circ(3);
+
+    // Call overridden functions directly
+    rect.CalculateArea();
+    circ.CalculateArea();
+
+    // Base class object
+    Shape shape;
+    shape.CalculateArea();
+
+    return 0;
+}
