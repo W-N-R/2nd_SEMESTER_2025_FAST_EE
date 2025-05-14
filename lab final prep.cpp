@@ -167,62 +167,119 @@
 //}
 
 
-#include <iostream>
-using namespace std;
+//#include <iostream>
+//using namespace std;
+//
+//// Base class
+//class Shape {
+//public:
+//    virtual void CalculateArea() {
+//        cout << "Shape: No specific area." << endl;
+//    }
+//};
+//
+//// Derived class - Rectangle
+//class Rectangle : public Shape {
+//private:
+//    double length, width;
+//
+//public:
+//    Rectangle(double l, double w) {
+//        length = l;
+//        width = w;
+//    }
+//
+//    void CalculateArea() override {
+//        double area = length * width;
+//        cout << "Area of Rectangle: " << area << endl;
+//    }
+//};
+//
+//// Derived class - Circle
+//class Circle : public Shape {
+//private:
+//    double radius;
+//
+//public:
+//    Circle(double r) {
+//        radius = r;
+//    }
+//
+//    void CalculateArea() override {
+//        double area = 3.14 * radius * radius;
+//        cout << "Area of Circle: " << area << endl;
+//    }
+//};
+//
+//int main() {
+//    // Create objects of derived classes
+//    Rectangle rect(4, 5);
+//    Circle circ(3);
+//
+//    // Call overridden functions directly
+//    rect.CalculateArea();
+//    circ.CalculateArea();
+//
+//    // Base class object
+//    Shape shape;
+//    shape.CalculateArea();
+//
+//    return 0;
+//}
 
-// Base class
-class Shape {
-public:
-    virtual void CalculateArea() {
-        cout << "Shape: No specific area." << endl;
-    }
-};
 
-// Derived class - Rectangle
-class Rectangle : public Shape {
-private:
-    double length, width;
-
-public:
-    Rectangle(double l, double w) {
-        length = l;
-        width = w;
-    }
-
-    void CalculateArea() override {
-        double area = length * width;
-        cout << "Area of Rectangle: " << area << endl;
-    }
-};
-
-// Derived class - Circle
-class Circle : public Shape {
-private:
-    double radius;
-
-public:
-    Circle(double r) {
-        radius = r;
-    }
-
-    void CalculateArea() override {
-        double area = 3.14 * radius * radius;
-        cout << "Area of Circle: " << area << endl;
-    }
-};
-
-int main() {
-    // Create objects of derived classes
-    Rectangle rect(4, 5);
-    Circle circ(3);
-
-    // Call overridden functions directly
-    rect.CalculateArea();
-    circ.CalculateArea();
-
-    // Base class object
-    Shape shape;
-    shape.CalculateArea();
-
-    return 0;
-}
+//#include <iostream>
+//#include<string>
+//using namespace std;
+//
+//class library_members {
+//protected :
+//	string name;
+//public:
+//	library_members(string name) {
+//		this->name = name;
+//	}
+//	virtual void display() = 0;
+//	
+//};
+//
+//class student : public library_members {
+//private :
+//	string roll_number;
+//	string department;
+//public:
+//	student(string name, string rollnumber, string department) : library_members(name), roll_number(rollnumber), department(department){}
+//	void display() {
+//		cout << "Name: " << name << endl;
+//		cout << "Roll Number: " << roll_number << endl;
+//		cout << "Department: " << department << endl;
+//	}
+//};
+//
+//class teacher : public library_members {
+//private:
+//	string ID;
+//	string Designation;
+//public:
+//	teacher(string name, string id, string designation) : library_members(name), ID(id), Designation(designation) {}
+//	void display() {
+//		cout << "Name: " << name << endl;
+//		cout << "Roll Number: " << ID<<endl;
+//		cout << "Department: " << Designation << endl;
+//	}
+//};
+//
+//int main() {
+//	library_members* m1 = new student("raveha", "2024-EE-6004", "Electrical");
+//	library_members* m2 = new teacher("aliha", "FAC-EE-13", "professor");
+//
+//	m1->display();
+//	cout << "***************************" << endl;
+//	m2->display();
+//	
+//	delete m1;
+//	delete m2;
+//
+//
+//	return 0;
+//}
