@@ -283,3 +283,337 @@
 //
 //	return 0;
 //}
+
+//
+//#include <iostream>
+//using namespace std;
+//
+//class point2D {
+//protected:
+//	double x, y;
+//public:
+//	point2D(): x(0),y(0) {}
+//	point2D(double x_axis, double y_axis);
+//	point2D operator + (point2D const& obj);
+//	friend ostream& operator << (ostream& out, const point2D );
+//	friend istream& operator >> (istream& in, point2D );
+//
+//};
+//
+//ostream& operator<<(ostream& out, const point2D cb)
+//
+//	{
+//		out << "(" << cb.x << "," << cb.y <<")"<< endl;
+//		return out;
+//	}
+//
+//istream& operator>>(istream& in, point2D cb) {
+//
+//	in >>  cb.x >>  cb.y ;
+//	return in;
+//}
+//
+//
+//point2D::point2D(double x_axis, double y_axis)
+//{
+//	x = x_axis;
+//	y = y_axis;
+//}
+//
+//point2D point2D::operator+(point2D const& obj) {
+//	point2D temp;
+//	temp.x = x + obj.x;
+//	temp.y = y + obj.y;
+//	return temp;
+//}
+//
+//int main() {
+//	point2D point1, point2, result;
+//
+//	cout << "Please enter first point in this form (x,y): ";
+//	cin >> point1;
+//
+//	cout << "Please enter second point in this form (x,y): ";
+//	cin >> point2;
+//
+//	result = point1 + point2;
+//
+//	cout << "Sum of points: " << result << endl;
+//
+//	return 0;
+//}
+
+//
+//#include <iostream>
+//using namespace std;
+//
+//class point2D {
+//protected:
+//    double x, y;
+//public:
+//    point2D() : x(0), y(0) {} // Initialize to avoid garbage values
+//    point2D(double x_axis, double y_axis);
+//    point2D operator+(point2D const& obj);
+//    friend ostream& operator<<(ostream& out, const point2D& cb); // Add const and &
+//    friend istream& operator>>(istream& in, point2D& cb); // Pass by reference
+//};
+//
+//ostream& operator<<(ostream& out, const point2D& cb) {
+//    out << "(" << cb.x << "," << cb.y << ")"; // Fix formatting
+//    return out;
+//}
+//
+//istream& operator>>(istream& in, point2D& cb) { // Pass by reference
+//    in >> cb.x >> cb.y; // Adjust if input format includes parentheses/comma
+//    return in;
+//}
+//
+//point2D::point2D(double x_axis, double y_axis) {
+//    x = x_axis;
+//    y = y_axis;
+//}
+//
+//point2D point2D::operator+(point2D const& obj) {
+//    point2D temp;
+//    temp.x = x + obj.x;
+//    temp.y = y + obj.y;
+//    return temp;
+//}
+//
+//int main() {
+//    point2D point1, point2, result;
+//
+//    cout << "Please enter first point in this form (x y): "; // Adjusted prompt
+//    cin >> point1;
+//
+//    cout << "Please enter second point in this form (x y): "; // Adjusted prompt
+//    cin >> point2;
+//
+//    result = point1 + point2;
+//
+//    cout << "Sum of points: " << result << endl;
+//
+//    return 0;
+//}
+
+
+
+
+
+//#include <iostream>
+//
+//using namespace std;
+//
+//template <class datatype>
+//datatype findminmax(datatype a, datatype b, datatype c){
+//		if (a<b<c){
+//	cout<<"Minimum: "<<a;
+//	}
+//	if(a>b>c){
+//		cout<<"Maximum: "<<a;
+//	}
+//	if (b<a<c){
+//	cout<<"Minimum: "<<b;
+//	}
+//	if(b>a>c){
+//		cout<<"Maximum: "<<b;
+//	}
+//	if (c<b<a){
+//	cout<<"Minimum: "<<c;
+//	}
+//	if(c>b>a){
+//		cout<<"Maximum: "<<c;
+//	}
+//	return datatype;
+//}
+//
+//int main (){
+//	int a,b,c;
+//	cin>>a>>b>>c;
+//	cout << "int type"<<endl;
+//	findminmax(a,b,c);
+//	cout <<"------------"<<endl;
+//	double a1,b1,c1;
+//	cout <<"double type"<<endl;
+//	findminmax(a1,b1,c1);
+//	cout <<"---------"<<endl;
+//	system ("pause");
+//}
+
+
+
+//#include <iostream>
+//#include <string>
+//using namespace std;
+//class Habitant {
+//protected:
+//	string type;
+//	int temp;
+//public:
+//	Habitant(string typ, int temp) {
+//		type = typ;
+//		this->temp = temp;
+//	}
+//};
+//
+//class animal {
+//private:
+//	string Name;
+//	int Age;
+//	Habitant Obj;
+//public:
+//	animal(string name, int age, Habitant obj) : Name(name), Age(age), Obj(obj) {}
+//	virtual void display() {}
+//};
+//
+//
+//class Bird :public animal {
+//protected:
+//	int wingspan;
+//	bool canfly;
+//public:
+//	Bird(string name, int age, Habitant obj, int wing) : animal(name, age, obj), wingspan(wing) {}
+//	void display();
+//};
+//
+//
+//class Mammal :public animal {
+//protected:
+//	string furtype;
+//	bool isDemonsticated;
+//public:
+//	Mammal(string name, int age, Habitant obj, string typ) : animal(name, age, obj), furtype(typ) {}
+//	void display();
+//};
+//
+//
+//int main() {
+//	Habitant forestHabitant("forest", 22);
+//
+//
+//	system("pause");
+//}
+//
+//void Mammal::display()
+//{
+//	cout << "mammal display" << endl;
+//}
+//
+//void Bird::display()
+//{
+//	cout << "bird diplayed " << endl;
+//}
+// 
+// 
+// 
+// 
+// 
+//#include <iostream>
+//#include <string>
+//using namespace std;
+//
+//class Habitant {
+//protected:
+//	string type;
+//	int temp;
+//public:
+//	Habitant(string typ, int temp) {
+//		type = typ;
+//		this->temp = temp;
+//	}
+//};
+//
+//class animal {
+//private:
+//	string Name;
+//	int Age;
+//	Habitant Obj;
+//public:
+//	animal(string name, int age, Habitant obj) : Name(name), Age(age), Obj(obj) {}
+//	virtual void display() {}
+//	virtual ~animal() {}
+//};
+//
+//class Bird : public animal {
+//protected:
+//	int wingspan;
+//	bool canfly;
+//public:
+//	Bird(string name, int age, Habitant obj, int wing) : animal(name, age, obj), wingspan(wing) {}
+//	void display() {
+//		cout << "Bird Displayed with wingspan: " << wingspan << endl;
+//	}
+//};
+//
+//class Mammal : public animal {
+//protected:
+//	string furtype;
+//	bool isDemonsticated;
+//public:
+//	Mammal(string name, int age, Habitant obj, string typ) : animal(name, age, obj), furtype(typ) {}
+//	void display() {
+//		cout << "Mammal Displayed with fur type: " << furtype << endl;
+//	}
+//};
+//
+//int main() {
+//	Habitant forestHabitant("forest", 22);
+//	Bird b("Parrot", 2, forestHabitant, 15);
+//	Mammal m("Lion", 5, forestHabitant, "Thick");
+//
+//	b.display();
+//	m.display();
+//
+//	return 0;
+//}
+
+
+//
+//
+//#include <iostream>
+//
+//using namespace std;
+//
+//class fraction {
+//protected:
+//	double fraction1;
+//	
+//public:
+//	fraction(){}
+//	fraction (double fr){
+//	fraction1 = fr;
+//	}
+//	fraction operator + (fraction& const a){
+//	fraction temp;
+//	temp.fraction1= fraction1 + a.fraction1;
+//	return temp;
+//	}
+//	fraction operator / (fraction& const a){
+//	fraction temp;
+//	temp.fraction1= fraction1 / a.fraction1;
+//	return temp;
+//	}
+//	
+//	friend ostream& operator << (ostream& out ,const fraction&  a);
+//};
+//
+// ostream& operator << (ostream& out ,const fraction&   a){
+//	out<<a.fraction1;
+//	return out;
+//} 
+//
+// int main (){
+// fraction far1, far2, total;
+// far1= 22/9;
+// far2=36/6;
+// cout <<"fraction 1 is : "<<far1<<endl;
+// cout <<"fraction 2 is : "<<far2<<endl;
+// cout <<"so the sum of the to give fractions are: ";
+// total = far1+far2;
+// cout<<total<<endl;
+// total=far1/far2;
+// cout<<"so the fration between two fractions is : ";
+// cout << total << endl;
+// system ("pause");
+// return 0;
+// }
