@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -144,6 +144,7 @@
     <ClCompile Include="Lab11.cpp" />
     <ClCompile Include="Lab_manual_Q#1.cpp" />
     <ClCompile Include="Mid-2.cpp" />
+    <ClCompile Include="PF_Final.cpp" />
     <ClCompile Include="pointers.cpp" />
     <ClCompile Include="polymorphism.cpp" />
     <ClCompile Include="Programming Question 1 .cpp" />
